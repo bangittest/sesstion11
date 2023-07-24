@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <label for="name">Số bảng cửu chương cần in</label>
+    <input id="name" type="number" />
+
+    <button id="button" onclick="print()">In</button> -->
+    <script>
+        function isPrime(number) {
+            if (number < 2) {
+
+            }
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function hienthi() {
+            let count = 0;
+            let number = 2;
+            while (count < 20) {
+                if (isPrime(number)) {
+                    document.write(`<br>${number}`);
+                    count++;
+                }
+                number++;
+            }
+        }
+
+        hienthi();
+    </script>
+</body>
+
+</html>

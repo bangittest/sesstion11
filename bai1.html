@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- bai 1 -->
+    <!-- <script>
+        for (let i = 1; i < 100; i++) {
+            document.write(`<br>${i}`)
+
+        }
+        alert(`da hoan thanh`)
+    </script> -->
+
+    <!-- bai 3 -->
+    <!-- <script>
+        let a = 0;
+        let b = 1;
+        let x;
+
+        for (let i = 0; i < 20; i++) {
+            document.write(`<br>${a}`);
+            x = a + b;
+            a = b;
+            b = x;
+        }
+    </script> -->
+
+
+    <!-- <script>
+        const colors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'gray', 'black'];
+        for (let i = 0; i < 10; i++) {
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            console.log(randomColor);
+        }
+    </script> -->
+
+    <!-- <script>
+
+        //  Viết chương trình hiển thị bình phương của số nguyên từ 2 🡪 N nhưng hiển thị các kết quả chia hết cho 2..N 
+        //  nhập từ người dùng.Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        let N = prompt("Nhập số N:");
+        if (N < 2 || N > 100) {
+            alert("nhập số N trong khoảng từ 2 đến 100");
+        } else {
+            for (let i = 2; i <= N; i++) {
+                if (i % 2 === 0) {
+                    document.write(<br>${i * i});
+                }
+            }
+        }
+    </script> -->
+    <!-- 
+    <script>
+
+        // Viết chương trình hiển thị bình phương của số chẵn từ 2
+        //  🡪 N.N nhập từ người dùng.Nếu N < 2 hoặc N > 100, thông báo người dùng nhập lại.
+        let N = prompt("Nhập số N:");
+        if (N < 2 || N > 100) {
+            alert("Vui lòng nhập số N trong khoảng từ 2 đến 100");
+        } else {
+            for (let i = 2; i <= N; i += 2) {
+
+                document.write(`<br>${i * i}`);
+            }
+        }
+    </script> -->
+
+    <script>
+        let color = 0;
+        for (i = 0; i < 10; i++) {
+            color = 100 + Math.floor(Math.random() * 899);//cú pháp random màu
+            console.log("%c day la noi dug", `color: #${color}`) //bắt buộc phải có %c ở trước để nhận được mã random color
+        }
+    </script>
+</body>
+
+</html>

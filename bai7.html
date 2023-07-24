@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Trong phần này, chúng ta sẽ phát triển một ứng dụng cho phép hiển thị 20 số nguyên tố đầu tiên.
+
+        // Hướng dẫn:
+
+        // Bước 1: Khai báo biến số nguyên numbers và nhập cho nó một giá trị từ bàn phím để lưu số lượng số nguyên tố cần in ra.
+
+        //         Bước 2: Khai báo biến count và gán cho nó giá trị 0, biến này để đếm xem số lượng lượng số nguyên tố cần in ra đã bằng numbers hay chưa.
+
+        //             Bước 3: Khai báo biến N và gán cho giá trị 2, biến này để kiểm tra xem các giá trị nó nhận được có phải là số nguyên tố không, mỗi lần lặp giá trị của biến sẽ được tăng lên 1.
+
+        // Bước 4: Trong khi count < numbers thì:
+
+        // ● Kiểm tra xem N có phải là số nguyên tố không.Nếu N là số nguyên tố thì in ra giá trị của N và tăng giá trị của count lên 1
+
+        // ● Giá trị của N tăng lên 1 để kiểm tra số tiếp theo
+        // b1
+        let numbers = Number(prompt("Nhap vao so luong so ngto ban muon:")) // numbers là số lượng người dùng muốn
+
+        let count = 0; // count là số lượng số ngto mình tìm được
+
+        let N = 2; // bắt đầu của dãy các số ngto
+
+        let check = true; // sau mỗi lần kiểm tra thì lưu kết quả xác nhận có phải số nguyên tố hay không vào biến check
+        while (count < numbers) {
+
+            for (let i = 2; i <= (N / 2); i++) {
+                if (N % i == 0) {
+                    check = false;
+                    break;
+                }
+            }
+
+            if (check == true) {
+                console.log("==> ", N);
+                count++
+            }
+
+            N++;
+            check = true;
+
+        }
+    </script>
+</body>
+
+</html>
